@@ -1,0 +1,727 @@
+3072  execve("./thread_d", ["./thread_d"], 0x7ffc0af9d608 /* 64 vars */) = 0
+3072  brk(NULL)                         = 0x638743e40000
+3072  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad69961d000
+3072  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+3072  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3072  fstat(3, {st_mode=S_IFREG|0644, st_size=74715, ...}) = 0
+3072  mmap(NULL, 74715, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ad69960a000
+3072  close(3)                          = 0
+3072  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libasan.so.8", O_RDONLY|O_CLOEXEC) = 3
+3072  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3072  fstat(3, {st_mode=S_IFREG|0644, st_size=10924208, ...}) = 0
+3072  mmap(NULL, 7146024, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ad698e00000
+3072  mmap(0x7ad698e36000, 1204224, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x36000) = 0x7ad698e36000
+3072  mmap(0x7ad698f5c000, 233472, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15c000) = 0x7ad698f5c000
+3072  mmap(0x7ad698f95000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x194000) = 0x7ad698f95000
+3072  mmap(0x7ad698f9d000, 5454376, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ad698f9d000
+3072  close(3)                          = 0
+3072  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+3072  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+3072  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+3072  fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+3072  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+3072  mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ad698a00000
+3072  mmap(0x7ad698a28000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ad698a28000
+3072  mmap(0x7ad698bb0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7ad698bb0000
+3072  mmap(0x7ad698bff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7ad698bff000
+3072  mmap(0x7ad698c05000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ad698c05000
+3072  close(3)                          = 0
+3072  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+3072  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3072  fstat(3, {st_mode=S_IFREG|0644, st_size=952616, ...}) = 0
+3072  mmap(NULL, 950296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ad699521000
+3072  mmap(0x7ad699531000, 520192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7ad699531000
+3072  mmap(0x7ad6995b0000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8f000) = 0x7ad6995b0000
+3072  mmap(0x7ad699608000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe7000) = 0x7ad699608000
+3072  close(3)                          = 0
+3072  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+3072  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3072  fstat(3, {st_mode=S_IFREG|0644, st_size=183024, ...}) = 0
+3072  mmap(NULL, 185256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ad6994f3000
+3072  mmap(0x7ad6994f7000, 147456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7ad6994f7000
+3072  mmap(0x7ad69951b000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ad69951b000
+3072  mmap(0x7ad69951f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000) = 0x7ad69951f000
+3072  close(3)                          = 0
+3072  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994f1000
+3072  arch_prctl(ARCH_SET_FS, 0x7ad6994f2100) = 0
+3072  set_tid_address(0x7ad6994f23d0)   = 3072
+3072  set_robust_list(0x7ad6994f23e0, 24) = 0
+3072  rseq(0x7ad6994f2a20, 0x20, 0, 0x53053053) = 0
+3072  mprotect(0x7ad698bff000, 16384, PROT_READ) = 0
+3072  mprotect(0x7ad69951f000, 4096, PROT_READ) = 0
+3072  mprotect(0x7ad699608000, 4096, PROT_READ) = 0
+3072  mprotect(0x7ad698f95000, 16384, PROT_READ) = 0
+3072  mprotect(0x638717f81000, 4096, PROT_READ) = 0
+3072  mprotect(0x7ad699655000, 8192, PROT_READ) = 0
+3072  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3072  munmap(0x7ad69960a000, 74715)     = 0
+3072  readlinkat(AT_FDCWD, "/proc/self/exe", "/home/fit_enjoyer/osi/os/threads"..., 4096) = 45
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad69961c000
+3072  openat(AT_FDCWD, "/proc/self/cmdline", O_RDONLY) = 3
+3072  read(3, "./thread_d\0", 4096)     = 11
+3072  read(3, "", 4085)                 = 0
+3072  close(3)                          = 0
+3072  munmap(0x7ad69961c000, 4096)      = 0
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad69961c000
+3072  openat(AT_FDCWD, "/proc/self/environ", O_RDONLY) = 3
+3072  read(3, "SHELL=/bin/bash\0SESSION_MANAGER="..., 4096) = 4053
+3072  read(3, "", 43)                   = 0
+3072  close(3)                          = 0
+3072  mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad69960c000
+3072  mmap(NULL, 3727360, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad698600000
+3072  mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad698400000
+3072  munmap(0x7ad698500000, 1048576)   = 0
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad69960b000
+3072  mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad698200000
+3072  munmap(0x7ad698300000, 1048576)   = 0
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad69960a000
+3072  mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad698000000
+3072  munmap(0x7ad698100000, 1048576)   = 0
+3072  mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad697e00000
+3072  munmap(0x7ad697f00000, 1048576)   = 0
+3072  mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad697c00000
+3072  munmap(0x7ad697d00000, 1048576)   = 0
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994f0000
+3072  prlimit64(0, RLIMIT_CORE, NULL, {rlim_cur=0, rlim_max=RLIM64_INFINITY}) = 0
+3072  prlimit64(0, RLIMIT_CORE, {rlim_cur=0, rlim_max=RLIM64_INFINITY}, NULL) = 0
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994ef000
+3072  openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+3072  read(3, "638717f7e000-638717f7f000 r--p 0"..., 4096) = 4081
+3072  read(3, "7ffcd59e1000-7f", 15)    = 15
+3072  close(3)                          = 0
+3072  munmap(0x7ad6994ef000, 4096)      = 0
+3072  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994ee000
+3072  openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+3072  read(3, "638717f7e000-638717f7f000 r--p 0"..., 8192) = 4081
+3072  read(3, "7ffcd59e1000-7ffcd59e3000 r-xp 0"..., 4111) = 164
+3072  read(3, "", 3947)                 = 0
+3072  close(3)                          = 0
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994ed000
+3072  openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+3072  read(3, "638717f7e000-638717f7f000 r--p 0"..., 4096) = 4081
+3072  read(3, "7ffcd59e1000-7f", 15)    = 15
+3072  close(3)                          = 0
+3072  munmap(0x7ad6994ed000, 4096)      = 0
+3072  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994ec000
+3072  openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+3072  read(3, "638717f7e000-638717f7f000 r--p 0"..., 8192) = 4081
+3072  read(3, "7ffcd59e1000-7ffcd59e3000 r-xp 0"..., 4111) = 164
+3072  read(3, "", 3947)                 = 0
+3072  close(3)                          = 0
+3072  munmap(0x7ad6994ec000, 8192)      = 0
+3072  mmap(0x7fff7000, 268435456, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fff7000
+3072  madvise(0x7fff7000, 268435456, MADV_NOHUGEPAGE) = 0
+3072  madvise(0x7fff7000, 268435456, MADV_DONTDUMP) = 0
+3072  mmap(0x2008fff7000, 15392894357504, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2008fff7000
+3072  madvise(0x2008fff7000, 15392894357504, MADV_NOHUGEPAGE) = 0
+3072  madvise(0x2008fff7000, 15392894357504, MADV_DONTDUMP) = 0
+3072  mmap(0x8fff7000, 2199023255552, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x8fff7000
+3072  sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+3072  mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994e6000
+3072  sigaltstack({ss_sp=0x7ad6994e6000, ss_flags=0, ss_size=32768}, NULL) = 0
+3072  rt_sigaction(SIGSEGV, {sa_handler=0x7ad698f03360, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_NODEFER|SA_SIGINFO, sa_restorer=0x7ad698a45320}, NULL, 8) = 0
+3072  rt_sigaction(SIGBUS, {sa_handler=0x7ad698f03360, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_NODEFER|SA_SIGINFO, sa_restorer=0x7ad698a45320}, NULL, 8) = 0
+3072  rt_sigaction(SIGFPE, {sa_handler=0x7ad698f03360, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_NODEFER|SA_SIGINFO, sa_restorer=0x7ad698a45320}, NULL, 8) = 0
+3072  mmap(0x500000000000, 4398046519296, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x500000000000
+3072  mmap(0x540000000000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x540000000000
+3072  mmap(NULL, 8388608, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7ad697400000
+3072  mmap(NULL, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994d8000
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994d7000
+3072  getpid()                          = 3072
+3072  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994d6000
+3072  openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+3072  read(3, "7fff7000-8fff7000 rw-p 00000000 "..., 4096) = 4080
+3072  read(3, "7ad699657000-7ad", 16)   = 16
+3072  close(3)                          = 0
+3072  munmap(0x7ad6994d6000, 4096)      = 0
+3072  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994d5000
+3072  openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+3072  read(3, "7fff7000-8fff7000 rw-p 00000000 "..., 8192) = 4080
+3072  read(3, "7ad699657000-7ad699659000 rw-p 0"..., 4112) = 445
+3072  read(3, "", 3667)                 = 0
+3072  close(3)                          = 0
+3072  munmap(0x7ad6994ee000, 8192)      = 0
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994ef000
+3072  openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+3072  read(3, "7fff7000-8fff7000 rw-p 00000000 "..., 4096) = 4009
+3072  read(3, "7ad699655000-7ad699657000 r--p 0"..., 87) = 87
+3072  close(3)                          = 0
+3072  munmap(0x7ad6994ef000, 4096)      = 0
+3072  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994ee000
+3072  openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+3072  read(3, "7fff7000-8fff7000 rw-p 00000000 "..., 8192) = 4080
+3072  read(3, "7ad699657000-7ad699659000 rw-p 0"..., 4112) = 445
+3072  read(3, "", 3667)                 = 0
+3072  close(3)                          = 0
+3072  munmap(0x7ad6994ee000, 8192)      = 0
+3072  mmap(0x10001aa33000, 1044480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x10001aa33000
+3072  madvise(0x10001aa33000, 1044480, MADV_NOHUGEPAGE) = 0
+3072  madvise(0x10001aa33000, 1044480, MADV_DONTDUMP) = 0
+3072  mmap(NULL, 11571200, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad696800000
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994ef000
+3072  sigaltstack(NULL, {ss_sp=0x7ad6994e6000, ss_flags=0, ss_size=32768}) = 0
+3072  mmap(NULL, 1703936, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad698c60000
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994ee000
+3072  mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad696600000
+3072  munmap(0x7ad696700000, 1048576)   = 0
+3072  munmap(0x7ad6994ee000, 4096)      = 0
+3072  mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad696400000
+3072  munmap(0x7ad696500000, 1048576)   = 0
+3072  mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad696200000
+3072  munmap(0x7ad696300000, 1048576)   = 0
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994ee000
+3072  mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad698c50000
+3072  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994d3000
+3072  clock_gettime(CLOCK_MONOTONIC, {tv_sec=2388, tv_nsec=732122829}) = 0
+3072  mmap(0x507000000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x507000000000
+3072  mmap(0x507e00000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x507e00000000
+3072  mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad698500000
+3072  mmap(NULL, 8388608, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7ad695a00000
+3072  clock_gettime(CLOCK_MONOTONIC, {tv_sec=2388, tv_nsec=733115565}) = 0
+3072  mmap(0x503000000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x503000000000
+3072  mmap(0x503e00000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x503e00000000
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994d2000
+3072  gettid()                          = 3072
+3072  getppid()                         = 3069
+3072  getpid()                          = 3072
+3072  fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+3072  mmap(0x519000000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x519000000000
+3072  mmap(0x519e00000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x519e00000000
+3072  write(1, "main [3072 3069 3072]: Hello fro"..., 40) = 40
+3072  gettid()                          = 3072
+3072  rt_sigprocmask(SIG_SETMASK, ~[SYS RT_1], [], 8) = 0
+3072  mmap(NULL, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad698c42000
+3072  rt_sigaction(SIGRT_1, {sa_handler=0x7ad698a99520, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7ad698a45320}, NULL, 8) = 0
+3072  rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+3072  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ad695000000
+3072  mprotect(0x7ad695001000, 8388608, PROT_READ|PROT_WRITE) = 0
+3072  mmap(0x512000000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x512000000000
+3072  mmap(0x512e00000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x512e00000000
+3072  rt_sigprocmask(SIG_BLOCK, ~[], ~[KILL STOP SYS RTMIN RT_1], 8) = 0
+3072  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7ad695800990, parent_tid=0x7ad695800990, exit_signal=0, stack=0x7ad695000000, stack_size=0x7fff40, tls=0x7ad6958006c0} => {parent_tid=[3073]}, 88) = 3073
+3073  rseq(0x7ad695800fe0, 0x20, 0, 0x53053053 <unfinished ...>
+3072  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP SYS RTMIN RT_1],  <unfinished ...>
+3073  <... rseq resumed>)               = 0
+3072  <... rt_sigprocmask resumed>NULL, 8) = 0
+3073  set_robust_list(0x7ad6958009a0, 24 <unfinished ...>
+3072  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad6994d1000
+3073  <... set_robust_list resumed>)    = 0
+3072  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+3073  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP SYS RTMIN RT_1],  <unfinished ...>
+3072  <... rt_sigprocmask resumed>NULL, 8) = 0
+3073  <... rt_sigprocmask resumed>NULL, 8) = 0
+3072  gettid( <unfinished ...>
+3073  gettid( <unfinished ...>
+3072  <... gettid resumed>)             = 3072
+3073  <... gettid resumed>)             = 3073
+3072  rt_sigprocmask(SIG_SETMASK, ~[SYS RT_1], [], 8) = 0
+3073  sched_getaffinity(3073, 32,  <unfinished ...>
+3072  mmap(NULL, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3073  <... sched_getaffinity resumed>[0 1 2 3]) = 8
+3072  <... mmap resumed>)               = 0x7ad698c34000
+3072  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+3073  mmap(0x50e000000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3072  <... mmap resumed>)               = 0x7ad694600000
+3073  <... mmap resumed>)               = 0x50e000000000
+3072  mprotect(0x7ad694601000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+3073  mmap(0x50ee00000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3072  <... mprotect resumed>)           = 0
+3073  <... mmap resumed>)               = 0x50ee00000000
+3072  rt_sigprocmask(SIG_BLOCK, ~[], ~[KILL STOP SYS RT_1], 8) = 0
+3073  mmap(0x524000000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3072  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7ad694e00990, parent_tid=0x7ad694e00990, exit_signal=0, stack=0x7ad694600000, stack_size=0x7fff40, tls=0x7ad694e006c0} <unfinished ...>
+3073  <... mmap resumed>)               = 0x524000000000
+3073  mmap(0x524e00000000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3072  <... clone3 resumed> => {parent_tid=[3074]}, 88) = 3074
+3073  <... mmap resumed>)               = 0x524e00000000
+3074  rseq(0x7ad694e00fe0, 0x20, 0, 0x53053053 <unfinished ...>
+3072  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP SYS RT_1], NULL, 8) = 0
+3074  <... rseq resumed>)               = 0
+3073  mmap(0xf5b529f9000, 1040384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3072  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+3074  set_robust_list(0x7ad694e009a0, 24 <unfinished ...>
+3073  <... mmap resumed>)               = 0xf5b529f9000
+3072  <... rt_sigprocmask resumed>NULL, 8) = 0
+3074  <... set_robust_list resumed>)    = 0
+3072  gettid( <unfinished ...>
+3073  madvise(0xf5b529f9000, 1040384, MADV_NOHUGEPAGE <unfinished ...>
+3072  <... gettid resumed>)             = 3072
+3074  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP SYS RTMIN RT_1],  <unfinished ...>
+3072  rt_sigprocmask(SIG_SETMASK, ~[SYS RT_1],  <unfinished ...>
+3073  <... madvise resumed>)            = 0
+3072  <... rt_sigprocmask resumed>[], 8) = 0
+3074  <... rt_sigprocmask resumed>NULL, 8) = 0
+3072  mmap(NULL, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3073  madvise(0xf5b529f9000, 1040384, MADV_DONTDUMP <unfinished ...>
+3072  <... mmap resumed>)               = 0x7ad698c26000
+3074  gettid( <unfinished ...>
+3073  <... madvise resumed>)            = 0
+3072  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+3074  <... gettid resumed>)             = 3074
+3073  mmap(NULL, 11571200, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3072  <... mmap resumed>)               = 0x7ad693c00000
+3072  mprotect(0x7ad693c01000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+3074  sched_getaffinity(3074, 32,  <unfinished ...>
+3073  <... mmap resumed>)               = 0x7ad693000000
+3072  <... mprotect resumed>)           = 0
+3074  <... sched_getaffinity resumed>[0 1 2 3]) = 8
+3072  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+3073  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3072  <... rt_sigprocmask resumed>~[KILL STOP SYS RT_1], 8) = 0
+3074  mmap(0x524000010000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3072  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7ad694400990, parent_tid=0x7ad694400990, exit_signal=0, stack=0x7ad693c00000, stack_size=0x7fff40, tls=0x7ad6944006c0} <unfinished ...>
+3073  <... mmap resumed>)               = 0x7ad698c25000
+3074  <... mmap resumed>)               = 0x524000010000
+3074  mmap(0xf5b528b9000, 1040384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3073  sigaltstack(NULL,  <unfinished ...>
+3072  <... clone3 resumed> => {parent_tid=[3075]}, 88) = 3075
+3075  rseq(0x7ad694400fe0, 0x20, 0, 0x53053053 <unfinished ...>
+3074  <... mmap resumed>)               = 0xf5b528b9000
+3073  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+3072  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP SYS RT_1],  <unfinished ...>
+3075  <... rseq resumed>)               = 0
+3074  madvise(0xf5b528b9000, 1040384, MADV_NOHUGEPAGE <unfinished ...>
+3073  mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3072  <... rt_sigprocmask resumed>NULL, 8) = 0
+3074  <... madvise resumed>)            = 0
+3072  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+3073  <... mmap resumed>)               = 0x7ad698c1d000
+3072  <... rt_sigprocmask resumed>NULL, 8) = 0
+3074  madvise(0xf5b528b9000, 1040384, MADV_DONTDUMP <unfinished ...>
+3072  gettid( <unfinished ...>
+3073  sigaltstack({ss_sp=0x7ad698c1d000, ss_flags=0, ss_size=32768},  <unfinished ...>
+3072  <... gettid resumed>)             = 3072
+3074  <... madvise resumed>)            = 0
+3072  rt_sigprocmask(SIG_SETMASK, ~[SYS RT_1],  <unfinished ...>
+3073  <... sigaltstack resumed>NULL)    = 0
+3072  <... rt_sigprocmask resumed>[], 8) = 0
+3074  mmap(NULL, 11571200, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3072  mmap(NULL, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3073  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+3072  <... mmap resumed>)               = 0x7ad6989f2000
+3074  <... mmap resumed>)               = 0x7ad692400000
+3073  <... rt_sigprocmask resumed>NULL, 8) = 0
+3072  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+3074  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3073  gettid( <unfinished ...>
+3072  <... mmap resumed>)               = 0x7ad691a00000
+3074  <... mmap resumed>)               = 0x7ad698c1c000
+3072  mprotect(0x7ad691a01000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+3073  <... gettid resumed>)             = 3073
+3074  sigaltstack(NULL,  <unfinished ...>
+3072  <... mprotect resumed>)           = 0
+3074  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+3073  getppid( <unfinished ...>
+3072  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+3074  mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3072  <... rt_sigprocmask resumed>~[KILL STOP SYS RT_1], 8) = 0
+3073  <... getppid resumed>)            = 3069
+3072  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7ad692200990, parent_tid=0x7ad692200990, exit_signal=0, stack=0x7ad691a00000, stack_size=0x7fff40, tls=0x7ad6922006c0} <unfinished ...>
+3074  <... mmap resumed>)               = 0x7ad698c14000
+3073  getpid( <unfinished ...>
+3075  set_robust_list(0x7ad6944009a0, 24 <unfinished ...>
+3074  sigaltstack({ss_sp=0x7ad698c14000, ss_flags=0, ss_size=32768},  <unfinished ...>
+3073  <... getpid resumed>)             = 3072
+3072  <... clone3 resumed> => {parent_tid=[3076]}, 88) = 3076
+3076  rseq(0x7ad692200fe0, 0x20, 0, 0x53053053 <unfinished ...>
+3075  <... set_robust_list resumed>)    = 0
+3072  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP SYS RT_1],  <unfinished ...>
+3076  <... rseq resumed>)               = 0
+3074  <... sigaltstack resumed>NULL)    = 0
+3073  write(1, "mythread [3072 3069 3073]: Hello"..., 79 <unfinished ...>
+3072  <... rt_sigprocmask resumed>NULL, 8) = 0
+3076  set_robust_list(0x7ad6922009a0, 24 <unfinished ...>
+3075  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP SYS RTMIN RT_1],  <unfinished ...>
+3072  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+3076  <... set_robust_list resumed>)    = 0
+3074  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+3076  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP SYS RTMIN RT_1],  <unfinished ...>
+3075  <... rt_sigprocmask resumed>NULL, 8) = 0
+3072  <... rt_sigprocmask resumed>NULL, 8) = 0
+3076  <... rt_sigprocmask resumed>NULL, 8) = 0
+3073  <... write resumed>)              = 79
+3076  gettid( <unfinished ...>
+3075  gettid( <unfinished ...>
+3074  <... rt_sigprocmask resumed>NULL, 8) = 0
+3072  gettid( <unfinished ...>
+3076  <... gettid resumed>)             = 3076
+3073  write(1, "mythread: After change - Local: "..., 59 <unfinished ...>
+3072  <... gettid resumed>)             = 3072
+3076  sched_getaffinity(3076, 32,  <unfinished ...>
+3075  <... gettid resumed>)             = 3075
+3074  gettid( <unfinished ...>
+3076  <... sched_getaffinity resumed>[0 1 2 3]) = 8
+3073  <... write resumed>)              = 59
+3072  rt_sigprocmask(SIG_SETMASK, ~[SYS RT_1],  <unfinished ...>
+3076  mmap(0x50e000010000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3074  <... gettid resumed>)             = 3074
+3072  <... rt_sigprocmask resumed>[], 8) = 0
+3076  <... mmap resumed>)               = 0x50e000010000
+3075  sched_getaffinity(3075, 32,  <unfinished ...>
+3073  rt_sigprocmask(SIG_SETMASK, ~[SYS RT_1],  <unfinished ...>
+3072  mmap(NULL, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3076  mmap(0x524000020000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3075  <... sched_getaffinity resumed>[0 1 2 3]) = 8
+3074  getppid( <unfinished ...>
+3073  <... rt_sigprocmask resumed>NULL, 8) = 0
+3072  <... mmap resumed>)               = 0x7ad6989e4000
+3076  <... mmap resumed>)               = 0x524000020000
+3075  futex(0x540000001208, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+3074  <... getppid resumed>)            = 3069
+3072  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+3076  futex(0x540000001208, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3073  futex(0x540000001208, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+3072  <... mmap resumed>)               = 0x7ad691000000
+3076  <... futex resumed>)              = 0
+3075  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+3074  getpid( <unfinished ...>
+3072  mprotect(0x7ad691001000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+3076  mmap(0xf5b52339000, 1040384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3073  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+3072  <... mprotect resumed>)           = 0
+3076  <... mmap resumed>)               = 0xf5b52339000
+3075  mmap(0x524000030000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3074  <... getpid resumed>)             = 3072
+3072  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+3076  madvise(0xf5b52339000, 1040384, MADV_NOHUGEPAGE <unfinished ...>
+3074  write(1, "mythread [3072 3069 3074]: Hello"..., 79 <unfinished ...>
+3073  futex(0x540000001208, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+3072  <... rt_sigprocmask resumed>~[KILL STOP SYS RT_1], 8) = 0
+3076  <... madvise resumed>)            = 0
+3075  <... mmap resumed>)               = 0x524000030000
+3072  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7ad691800990, parent_tid=0x7ad691800990, exit_signal=0, stack=0x7ad691000000, stack_size=0x7fff40, tls=0x7ad6918006c0} <unfinished ...>
+3076  madvise(0xf5b52339000, 1040384, MADV_DONTDUMP <unfinished ...>
+3074  <... write resumed>)              = 79
+3072  <... clone3 resumed> => {parent_tid=[3077]}, 88) = 3077
+3077  rseq(0x7ad691800fe0, 0x20, 0, 0x53053053 <unfinished ...>
+3076  <... madvise resumed>)            = 0
+3072  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP SYS RT_1],  <unfinished ...>
+3077  <... rseq resumed>)               = 0
+3076  mmap(NULL, 11571200, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3074  write(1, "mythread: After change - Local: "..., 59 <unfinished ...>
+3072  <... rt_sigprocmask resumed>NULL, 8) = 0
+3077  set_robust_list(0x7ad6918009a0, 24 <unfinished ...>
+3076  <... mmap resumed>)               = 0x7ad690400000
+3075  futex(0x540000001208, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+3077  <... set_robust_list resumed>)    = 0
+3074  <... write resumed>)              = 59
+3072  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+3075  <... futex resumed>)              = 1
+3072  <... rt_sigprocmask resumed>NULL, 8) = 0
+3077  rt_sigprocmask(SIG_SETMASK, ~[KILL STOP SYS RTMIN RT_1],  <unfinished ...>
+3076  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3075  mmap(0xf5b52779000, 1040384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3074  rt_sigprocmask(SIG_SETMASK, ~[SYS RT_1],  <unfinished ...>
+3073  <... futex resumed>)              = 0
+3072  futex(0x7ad695800990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 3073, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3077  <... rt_sigprocmask resumed>NULL, 8) = 0
+3076  <... mmap resumed>)               = 0x7ad698c13000
+3074  <... rt_sigprocmask resumed>NULL, 8) = 0
+3077  gettid( <unfinished ...>
+3076  sigaltstack(NULL,  <unfinished ...>
+3075  <... mmap resumed>)               = 0xf5b52779000
+3073  sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=32768},  <unfinished ...>
+3077  <... gettid resumed>)             = 3077
+3076  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+3075  madvise(0xf5b52779000, 1040384, MADV_NOHUGEPAGE <unfinished ...>
+3074  sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=32768},  <unfinished ...>
+3077  sched_getaffinity(3077, 32,  <unfinished ...>
+3076  mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3075  <... madvise resumed>)            = 0
+3073  <... sigaltstack resumed>{ss_sp=0x7ad698c1d000, ss_flags=0, ss_size=32768}) = 0
+3077  <... sched_getaffinity resumed>[0 1 2 3]) = 8
+3076  <... mmap resumed>)               = 0x7ad6989dc000
+3075  madvise(0xf5b52779000, 1040384, MADV_DONTDUMP <unfinished ...>
+3074  <... sigaltstack resumed>{ss_sp=0x7ad698c14000, ss_flags=0, ss_size=32768}) = 0
+3077  mmap(0xf5b521f9000, 1040384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3075  <... madvise resumed>)            = 0
+3073  munmap(0x7ad698c1d000, 32768 <unfinished ...>
+3074  munmap(0x7ad698c14000, 32768 <unfinished ...>
+3077  <... mmap resumed>)               = 0xf5b521f9000
+3073  <... munmap resumed>)             = 0
+3077  madvise(0xf5b521f9000, 1040384, MADV_NOHUGEPAGE <unfinished ...>
+3074  <... munmap resumed>)             = 0
+3077  <... madvise resumed>)            = 0
+3073  mmap(0xf5b529f9000, 1040384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3077  madvise(0xf5b521f9000, 1040384, MADV_DONTDUMP <unfinished ...>
+3074  mmap(0xf5b528b9000, 1040384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3077  <... madvise resumed>)            = 0
+3073  <... mmap resumed>)               = 0xf5b529f9000
+3074  <... mmap resumed>)               = 0xf5b528b9000
+3077  mmap(NULL, 11571200, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3073  madvise(0xf5b529f9000, 1040384, MADV_NOHUGEPAGE <unfinished ...>
+3074  madvise(0xf5b528b9000, 1040384, MADV_NOHUGEPAGE <unfinished ...>
+3077  <... mmap resumed>)               = 0x7ad68f800000
+3074  <... madvise resumed>)            = 0
+3073  <... madvise resumed>)            = 0
+3077  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3076  sigaltstack({ss_sp=0x7ad6989dc000, ss_flags=0, ss_size=32768},  <unfinished ...>
+3077  <... mmap resumed>)               = 0x7ad698c24000
+3076  <... sigaltstack resumed>NULL)    = 0
+3074  madvise(0xf5b528b9000, 1040384, MADV_DONTDUMP <unfinished ...>
+3073  madvise(0xf5b529f9000, 1040384, MADV_DONTDUMP <unfinished ...>
+3076  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+3076  gettid()                          = 3076
+3076  getppid()                         = 3069
+3076  getpid()                          = 3072
+3076  write(1, "mythread [3072 3069 3076]: Hello"..., 79 <unfinished ...>
+3077  sigaltstack(NULL,  <unfinished ...>
+3076  <... write resumed>)              = 79
+3074  <... madvise resumed>)            = 0
+3073  <... madvise resumed>)            = 0
+3076  write(1, "mythread: After change - Local: "..., 59 <unfinished ...>
+3077  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+3076  <... write resumed>)              = 59
+3074  mmap(0xf5b52478000, 1445888, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3073  mmap(0xf5b525f8000, 1445888, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3077  mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3076  rt_sigprocmask(SIG_SETMASK, ~[SYS RT_1], NULL, 8) = 0
+3077  <... mmap resumed>)               = 0x7ad698c14000
+3074  <... mmap resumed>)               = 0xf5b52478000
+3073  <... mmap resumed>)               = 0xf5b525f8000
+3076  sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=32768},  <unfinished ...>
+3074  madvise(0xf5b52478000, 1445888, MADV_NOHUGEPAGE <unfinished ...>
+3077  sigaltstack({ss_sp=0x7ad698c14000, ss_flags=0, ss_size=32768},  <unfinished ...>
+3076  <... sigaltstack resumed>{ss_sp=0x7ad6989dc000, ss_flags=0, ss_size=32768}) = 0
+3074  <... madvise resumed>)            = 0
+3073  madvise(0xf5b525f8000, 1445888, MADV_NOHUGEPAGE <unfinished ...>
+3077  <... sigaltstack resumed>NULL)    = 0
+3076  munmap(0x7ad6989dc000, 32768 <unfinished ...>
+3077  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+3076  <... munmap resumed>)             = 0
+3074  madvise(0xf5b52478000, 1445888, MADV_DONTDUMP <unfinished ...>
+3073  <... madvise resumed>)            = 0
+3077  <... rt_sigprocmask resumed>NULL, 8) = 0
+3076  mmap(0xf5b52339000, 1040384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3077  gettid( <unfinished ...>
+3076  <... mmap resumed>)               = 0xf5b52339000
+3074  <... madvise resumed>)            = 0
+3073  madvise(0xf5b525f8000, 1445888, MADV_DONTDUMP <unfinished ...>
+3077  <... gettid resumed>)             = 3077
+3076  madvise(0xf5b52339000, 1040384, MADV_NOHUGEPAGE <unfinished ...>
+3074  madvise(0xf5b52478000, 1445888, MADV_DONTNEED <unfinished ...>
+3073  <... madvise resumed>)            = 0
+3077  getppid( <unfinished ...>
+3076  <... madvise resumed>)            = 0
+3076  madvise(0xf5b52339000, 1040384, MADV_DONTDUMP) = 0
+3076  mmap(0xf5b52078000, 1445888, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xf5b52078000
+3076  madvise(0xf5b52078000, 1445888, MADV_NOHUGEPAGE) = 0
+3076  madvise(0xf5b52078000, 1445888, MADV_DONTDUMP) = 0
+3076  madvise(0xf5b52078000, 1445888, MADV_DONTNEED <unfinished ...>
+3074  <... madvise resumed>)            = 0
+3077  <... getppid resumed>)            = 3069
+3073  madvise(0xf5b525f8000, 1445888, MADV_DONTNEED <unfinished ...>
+3076  <... madvise resumed>)            = 0
+3077  getpid( <unfinished ...>
+3074  munmap(0x7ad692400000, 11571200 <unfinished ...>
+3073  <... madvise resumed>)            = 0
+3076  munmap(0x7ad690400000, 11571200 <unfinished ...>
+3074  <... munmap resumed>)             = 0
+3077  <... getpid resumed>)             = 3072
+3073  munmap(0x7ad693000000, 11571200 <unfinished ...>
+3074  munmap(0x7ad698c34000, 57344 <unfinished ...>
+3073  <... munmap resumed>)             = 0
+3074  <... munmap resumed>)             = 0
+3077  write(1, "mythread [3072 3069 3077]: Hello"..., 79 <unfinished ...>
+3075  mmap(NULL, 11571200, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3077  <... write resumed>)              = 79
+3074  munmap(0x7ad698c1c000, 4088 <unfinished ...>
+3073  munmap(0x7ad698c42000, 57344 <unfinished ...>
+3077  write(1, "mythread: After change - Local: "..., 59 <unfinished ...>
+3076  <... munmap resumed>)             = 0
+3075  <... mmap resumed>)               = 0x7ad693000000
+3074  <... munmap resumed>)             = 0
+3073  <... munmap resumed>)             = 0
+3077  <... write resumed>)              = 59
+3075  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3077  rt_sigprocmask(SIG_SETMASK, ~[SYS RT_1],  <unfinished ...>
+3076  munmap(0x7ad6989f2000, 57344 <unfinished ...>
+3074  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+3073  munmap(0x7ad698c25000, 4088 <unfinished ...>
+3077  <... rt_sigprocmask resumed>NULL, 8) = 0
+3075  <... mmap resumed>)               = 0x7ad698c4f000
+3074  <... rt_sigprocmask resumed>NULL, 8) = 0
+3077  sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=32768},  <unfinished ...>
+3073  <... munmap resumed>)             = 0
+3075  sigaltstack(NULL,  <unfinished ...>
+3074  madvise(0x7ad694600000, 8368128, MADV_DONTNEED <unfinished ...>
+3077  <... sigaltstack resumed>{ss_sp=0x7ad698c14000, ss_flags=0, ss_size=32768}) = 0
+3073  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+3077  munmap(0x7ad698c14000, 32768 <unfinished ...>
+3075  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+3074  <... madvise resumed>)            = 0
+3077  <... munmap resumed>)             = 0
+3075  mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+3074  exit(0 <unfinished ...>
+3073  <... rt_sigprocmask resumed>NULL, 8) = 0
+3077  mmap(0xf5b521f9000, 1040384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3076  <... munmap resumed>)             = 0
+3075  <... mmap resumed>)               = 0x7ad698c47000
+3074  <... exit resumed>)               = ?
+3076  munmap(0x7ad698c13000, 4088 <unfinished ...>
+3073  madvise(0x7ad695000000, 8368128, MADV_DONTNEED <unfinished ...>
+3076  <... munmap resumed>)             = 0
+3075  sigaltstack({ss_sp=0x7ad698c47000, ss_flags=0, ss_size=32768},  <unfinished ...>
+3074  +++ exited with 0 +++
+3077  <... mmap resumed>)               = 0xf5b521f9000
+3076  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+3075  <... sigaltstack resumed>NULL)    = 0
+3073  <... madvise resumed>)            = 0
+3077  madvise(0xf5b521f9000, 1040384, MADV_NOHUGEPAGE <unfinished ...>
+3076  <... rt_sigprocmask resumed>NULL, 8) = 0
+3075  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+3077  <... madvise resumed>)            = 0
+3076  madvise(0x7ad691a00000, 8368128, MADV_DONTNEED <unfinished ...>
+3073  exit(0 <unfinished ...>
+3077  madvise(0xf5b521f9000, 1040384, MADV_DONTDUMP <unfinished ...>
+3076  <... madvise resumed>)            = 0
+3075  <... rt_sigprocmask resumed>NULL, 8) = 0
+3077  <... madvise resumed>)            = 0
+3076  exit(0 <unfinished ...>
+3073  <... exit resumed>)               = ?
+3077  mmap(0xf5b51ef8000, 1445888, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+3076  <... exit resumed>)               = ?
+3075  gettid( <unfinished ...>
+3072  <... futex resumed>)              = 0
+3077  <... mmap resumed>)               = 0xf5b51ef8000
+3076  +++ exited with 0 +++
+3073  +++ exited with 0 +++
+3075  <... gettid resumed>)             = 3075
+3072  futex(0x7ad694400990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 3075, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+3077  madvise(0xf5b51ef8000, 1445888, MADV_NOHUGEPAGE <unfinished ...>
+3075  getppid( <unfinished ...>
+3077  <... madvise resumed>)            = 0
+3075  <... getppid resumed>)            = 3069
+3077  madvise(0xf5b51ef8000, 1445888, MADV_DONTDUMP <unfinished ...>
+3075  getpid( <unfinished ...>
+3077  <... madvise resumed>)            = 0
+3075  <... getpid resumed>)             = 3072
+3077  madvise(0xf5b51ef8000, 1445888, MADV_DONTNEED <unfinished ...>
+3075  write(1, "mythread [3072 3069 3075]: Hello"..., 79 <unfinished ...>
+3077  <... madvise resumed>)            = 0
+3077  munmap(0x7ad68f800000, 11571200 <unfinished ...>
+3075  <... write resumed>)              = 79
+3077  <... munmap resumed>)             = 0
+3075  write(1, "mythread: After change - Local: "..., 59) = 59
+3077  munmap(0x7ad6989e4000, 57344 <unfinished ...>
+3075  rt_sigprocmask(SIG_SETMASK, ~[SYS RT_1],  <unfinished ...>
+3077  <... munmap resumed>)             = 0
+3075  <... rt_sigprocmask resumed>NULL, 8) = 0
+3075  sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=32768}, {ss_sp=0x7ad698c47000, ss_flags=0, ss_size=32768}) = 0
+3075  munmap(0x7ad698c47000, 32768)     = 0
+3075  mmap(0xf5b52779000, 1040384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xf5b52779000
+3075  madvise(0xf5b52779000, 1040384, MADV_NOHUGEPAGE) = 0
+3075  madvise(0xf5b52779000, 1040384, MADV_DONTDUMP) = 0
+3075  mmap(0xf5b525f8000, 1445888, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xf5b525f8000
+3075  madvise(0xf5b525f8000, 1445888, MADV_NOHUGEPAGE) = 0
+3075  madvise(0xf5b525f8000, 1445888, MADV_DONTDUMP) = 0
+3075  madvise(0xf5b525f8000, 1445888, MADV_DONTNEED) = 0
+3075  munmap(0x7ad693000000, 11571200)  = 0
+3075  munmap(0x7ad698c26000, 57344)     = 0
+3077  munmap(0x7ad698c24000, 4088 <unfinished ...>
+3075  munmap(0x7ad698c4f000, 4088 <unfinished ...>
+3077  <... munmap resumed>)             = 0
+3075  <... munmap resumed>)             = 0
+3077  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+3075  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+3077  <... rt_sigprocmask resumed>NULL, 8) = 0
+3075  <... rt_sigprocmask resumed>NULL, 8) = 0
+3077  madvise(0x7ad691000000, 8368128, MADV_DONTNEED) = 0
+3075  madvise(0x7ad693c00000, 8368128, MADV_DONTNEED <unfinished ...>
+3077  exit(0 <unfinished ...>
+3075  <... madvise resumed>)            = 0
+3077  <... exit resumed>)               = ?
+3075  exit(0 <unfinished ...>
+3077  +++ exited with 0 +++
+3075  <... exit resumed>)               = ?
+3072  <... futex resumed>)              = 0
+3075  +++ exited with 0 +++
+3072  munmap(0x7ad695000000, 8392704)   = 0
+3072  write(1, "main: Final global: 67\n", 23) = 23
+3072  gettid()                          = 3072
+3072  gettid()                          = 3072
+3072  prctl(PR_GET_DUMPABLE)            = 1 (SUID_DUMP_USER)
+3072  getpid()                          = 3072
+3072  mmap(NULL, 2101248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad695600000
+3072  mprotect(0x7ad695600000, 4096, PROT_NONE) = 0
+3072  rt_sigprocmask(SIG_BLOCK, ~[ILL ABRT BUS FPE SEGV XCPU XFSZ], [], 8) = 0
+3072  clone(child_stack=0x7ad695800ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_UNTRACED) = 3078
+3072  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+3072  getpid()                          = 3072
+3072  prctl(PR_SET_PTRACER, 3078)       = 0
+3072  futex(0x7ffcd59d4368, FUTEX_WAKE_PRIVATE, 1) = 1
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  sched_yield()                     = 0
+3072  wait4(3078, NULL, __WALL, NULL)   = 3078
+3072  munmap(0x7ad695600000, 2101248)   = 0
+3072  getpid()                          = 3072
+3072  mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ad698c40000
+3072  getpid()                          = 3072
+3072  getpid()                          = 3072
+3072  exit_group(1)                     = ?
+3072  +++ exited with 1 +++

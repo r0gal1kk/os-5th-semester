@@ -1,0 +1,71 @@
+#define _GNU_SOURCE
+#include <stdio.h>
+#include <pthread.h>
+#include <string.h>
+#include <errno.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+#define NUM_THREADS 5
+
+int global_var = 42;
+
+void *mythread(void *arg) {
+    pthread_t self_tid = pthread_self();
+    pid_t tid_kernel = gettid();
+
+    int err = *(int*)arg;
+    if (err == 0) {
+        printf("[TID %ld] Поток успешно создан!\n", (long)tid_kernel);
+    } else {
+        printf("[TID %ld] ОШИБКА создания потока: %s\n", (long)tid_kernel, strerror(err));
+    }
+
+    // Локальные переменные
+    int local_var = 10;
+    static int local_static_var = 20;
+    const int local_const_var = 30;
+
+    //ID
+    printf("mythread [%d %d %d]: Hello! POSIX tid: %lu, Kernel tid: %d\n",
+           getpid(), getppid(), tid_kernel, (unsigned long)self_tid, tid_kernel);
+
+
+    //Адреса
+    printf("mythread: Local var addr: %p, Static local: %p, Const local: %p, Global: %p\n",
+           (void *)&local_var, (void *)&local_static_var, (void *)&local_const_var, (void *)&global_var);
+
+    return NULL;
+}
+
+int main() {
+    pthread_t tid[NUM_THREADS];
+    int err;
+    int i;
+
+    printf("main [%d %d %d]: Hello from main!\n", getpid(), getppid(), gettid());
+
+    for (i = 0; i < NUM_THREADS; i++) {
+        err = pthread_create(&tid[i], NULL, mythread, &err);
+        printf("%ld", (long)tid[i]);
+        if (err) {
+            printf("main: pthread_create() failed for thread %d: %s\n", i, strerror(err));
+            for (int j = 0; j < i; j++) {
+                pthread_join(tid[j], NULL);
+            }
+            return -1;
+        }
+    }
+
+    //sleep(300);
+
+    for (int i = 0; i < NUM_THREADS; i++) {
+        err = pthread_join(tid[i], NULL);
+        if (err) {
+            printf("main: pthread_join() failed for thread %d: %s\n", i, strerror(err));
+            return -1;
+        }
+    }
+
+    return 0;
+}
