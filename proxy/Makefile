@@ -1,20 +1,31 @@
 CC      := gcc
-CFLAGS  := -Wall -Wextra -Wpedantic -O2 -pthread
+CFLAGS  := -Wall -Wextra -Wpedantic -O2 -pthread -I.
 LDFLAGS := -pthread
 
-TARGET  := proxy
+TARGET  := proxy-http
+BUILDDIR := build
+
 SRCS    := proxy.c picohttpparser.c
-OBJS    := $(SRCS:.c=.o)
+OBJS    := $(SRCS:%.c=$(BUILDDIR)/%.o)
 
-.PHONY: all clean
+.PHONY: all clean distclean run
 
-all: $(TARGET)
+all: $(BUILDDIR)/$(TARGET)
 
-$(TARGET): $(OBJS)
-	$(CC) $(OBJS) -o $@ $(LDFLAGS)
+$(BUILDDIR)/$(TARGET): $(OBJS) | $(BUILDDIR)
+	$(CC) $^ -o $@ $(LDFLAGS)
 
-%.o: %.c
+$(BUILDDIR)/%.o: %.c | $(BUILDDIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
+$(BUILDDIR):
+	mkdir -p $@
+
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(BUILDDIR)/*.o $(BUILDDIR)/$(TARGET)
+
+distclean: clean
+	rm -rf $(BUILDDIR)
+
+run: all
+	./$(BUILDDIR)/$(TARGET)
